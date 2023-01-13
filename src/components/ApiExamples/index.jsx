@@ -1,4 +1,5 @@
 import { useNFTPort } from '../ApiCaller'
+import ReactImageFallBack from 'react-image-fallback'
 
 const NftDisplayer = ({ nftData = { contract_address: '', token_id: '' } }) => {
   return (
@@ -9,11 +10,10 @@ const NftDisplayer = ({ nftData = { contract_address: '', token_id: '' } }) => {
         <b>Creator Address:</b> {nftData.creator_address}
         <b>Token Id:</b> {nftData.token_id}
       </p>
-      <img
+      <ReactImageFallBack
         src={nftData.file_url}
-        onError={({ currentTarget }) => {
-          currentTarget.src = nftData.cached_file_url
-        }}
+        fallbackImage={nftData.cached_file_url}
+        initialImage={process.env.PUBLIC_URL + '/logo512.png'} // loader
         alt={nftData.file_url}
       />
     </>
