@@ -22,3 +22,24 @@ export const useNFTPort = ({ chain = 'ethereum' }) => {
 
   return responseState
 }
+
+export const useCoinsList = () => {
+  const [responseState, setResponseState] = useState({ response: {}, isResolved: false })
+
+  useEffect(() => {
+    const config = {
+      headers: {
+        accept: 'application/json'
+      }
+    }
+
+    const fecthData = async () => {
+      const response = await axios.get('https://api.coingecko.com/api/v3/coins/list', config)
+      setResponseState({ response, isResolved: true })
+    }
+
+    fecthData()
+  }, [])
+
+  return responseState
+}

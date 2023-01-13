@@ -1,4 +1,4 @@
-import { RawMarketDisplayer } from '../ApiExamples'
+import { RawCoinsList } from '../ApiExamples/CoinGeckoExamples'
 import { HighlightTitle } from './styles'
 
 function App () {
@@ -7,7 +7,7 @@ function App () {
       <HighlightTitle>
         Hello
       </HighlightTitle>
-      <RawMarketDisplayer />
+      <RawCoinsList />
     </div>
   )
 }

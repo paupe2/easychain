@@ -28,6 +28,7 @@ const NftsDisplayer = ({ nfts = [] }) => {
     </ul>
   )
 }
+
 export const RawMarketDisplayer = ({ filter = '' }) => {
   const nfts = useNFTPort({ chain: 'polygon' })
   console.log(nfts)
