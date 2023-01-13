@@ -1,4 +1,4 @@
-import { RawCoinMarketList } from '../ApiExamples/CoinGeckoExamples'
+import { RawSingleCoinPrice } from '../ApiExamples/CoinGeckoExamples'
 import { HighlightTitle } from './styles'
 
 function App () {
@@ -7,7 +7,7 @@ function App () {
       <HighlightTitle>
         Hello
       </HighlightTitle>
-      <RawCoinMarketList />
+      <RawSingleCoinPrice />
     </div>
   )
 }

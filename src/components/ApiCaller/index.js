@@ -91,3 +91,24 @@ export const useCoinsMarket = ({ currency = 'usd', order = 'market_cap_desc', pe
 
   return responseState
 }
+
+export const useCoinPrice = ({ id = 'bitcoin', currency = 'usd' }) => {
+  const [responseState, setResponseState] = useState({ response: {}, isResolved: false })
+
+  useEffect(() => {
+    const config = {
+      headers: {
+        accept: 'application/json'
+      }
+    }
+
+    const fecthData = async () => {
+      const response = await axios.get('https://api.coingecko.com/api/v3/simple/price?ids=' + id + '&vs_currencies=' + currency, config)
+      setResponseState({ response, isResolved: true })
+    }
+
+    fecthData()
+  }, [])
+
+  return responseState
+}

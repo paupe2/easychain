@@ -1,4 +1,4 @@
-import { useCoinsList, useCoinsMarket, useSupportedCurrencies } from '../ApiCaller'
+import { useCoinPrice, useCoinsList, useCoinsMarket, useSupportedCurrencies } from '../ApiCaller'
 
 const CoinDisplayer = ({ coin = { id: '', symbol: '', name: '' } }) => {
   return (
@@ -63,6 +63,20 @@ export const RawCoinMarketList = () => {
     <>
       {coins.isResolved
         ? coins.response.data.map((coin, index) => <MarketCoinDisplayer key={index} coin={coin} />)
+        : <p>LOADING LOADING LOADING</p>}
+    </>
+  )
+}
+
+export const RawSingleCoinPrice = () => {
+  const id = 'bitcoin'
+  const currency = 'usd'
+  const coin = useCoinPrice({ id, currency })
+  console.log(coin)
+  return (
+    <>
+      {coin.isResolved
+        ? <p><b>{id} in {currency}: </b> {coin.response.data[id][currency]}</p>
         : <p>LOADING LOADING LOADING</p>}
     </>
   )
