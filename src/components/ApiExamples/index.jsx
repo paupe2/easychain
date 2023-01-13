@@ -23,7 +23,7 @@ const NftDisplayer = ({ nftData = { contract_address: '', token_id: '' } }) => {
 const NftsDisplayer = ({ nfts = [] }) => {
   return (
     <ul>
-      {nfts.filter((nft, index) => index < 5).map((nft, index) =>
+      {nfts.map((nft, index) =>
         <li key={index}>
           <NftDisplayer nftData={nft} />
         </li>)}
@@ -31,7 +31,7 @@ const NftsDisplayer = ({ nfts = [] }) => {
   )
 }
 export const RawMarketDisplayer = ({ filter = '' }) => {
-  const nfts = useNFTPort(filter)
+  const nfts = useNFTPort({ chain: 'polygon' })
   console.log(nfts)
   return (
     <>
