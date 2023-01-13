@@ -87,7 +87,7 @@ export const useCoinsMarket = ({ currency = 'usd', order = 'market_cap_desc', pe
     }
 
     fecthData()
-  }, [])
+  }, [currency, order, perPage, page])
 
   return responseState
 }
@@ -108,7 +108,7 @@ export const useCoinPrice = ({ id = 'bitcoin', currency = 'usd' }) => {
     }
 
     fecthData()
-  }, [])
+  }, [id, currency])
 
   return responseState
 }
