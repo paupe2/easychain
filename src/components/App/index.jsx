@@ -1,4 +1,4 @@
-import { RawSupportedCurrencyList } from '../ApiExamples/CoinGeckoExamples'
+import { RawCoinMarketList } from '../ApiExamples/CoinGeckoExamples'
 import { HighlightTitle } from './styles'
 
 function App () {
@@ -7,7 +7,7 @@ function App () {
       <HighlightTitle>
         Hello
       </HighlightTitle>
-      <RawSupportedCurrencyList />
+      <RawCoinMarketList />
     </div>
   )
 }
