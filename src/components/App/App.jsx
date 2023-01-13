@@ -1,4 +1,5 @@
 import { HighlightTitle } from './styles'
+import LoadingComponent  from '../LoadingComponent'
 
 function App () {
   return (
@@ -6,6 +7,9 @@ function App () {
         <HighlightTitle>
           Hello
         </HighlightTitle>
+        <div style={{width:'20rem', height:'10rem'}} >
+          <LoadingComponent />
+        </div>
     </div>
   )
 }

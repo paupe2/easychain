@@ -13,4 +13,5 @@
     padding: 0;
     border: none;
     font-family: var(--ff-primary-body);
+    background-color: var(--clr-secondary);
 }
