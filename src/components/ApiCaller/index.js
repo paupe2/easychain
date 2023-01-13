@@ -1,11 +1,11 @@
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-export const useNFTPort = (filter) => {
+export const useNFTPort = ({ chain = 'ethereum' }) => {
   const [responseState, setResponseState] = useState({ response: {}, isResolved: false })
 
   const fetchData = async (config) => {
-    const response = await axios.get('https://api.nftport.xyz/v0/nfts?chain=ethereum&include=all', config)
+    const response = await axios.get('https://api.nftport.xyz/v0/nfts?chain=' + chain + '&include=all', config)
     setResponseState({ response, isResolved: true })
   }
 
@@ -17,7 +17,7 @@ export const useNFTPort = (filter) => {
       }
     }
     fetchData(config)
-  }, [filter])
+  }, [chain])
 
   return responseState
 }

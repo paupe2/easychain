@@ -9,7 +9,13 @@ const NftDisplayer = ({ nftData = { contract_address: '', token_id: '' } }) => {
         <b>Creator Address:</b> {nftData.creator_address}
         <b>Token Id:</b> {nftData.token_id}
       </p>
-      <img src={nftData.file_url} alt={nftData.file_url} />
+      <img
+        src={nftData.file_url}
+        onError={({ currentTarget }) => {
+          currentTarget.src = nftData.cached_file_url
+        }}
+        alt={nftData.file_url}
+      />
     </>
   )
 }
@@ -17,7 +23,7 @@ const NftDisplayer = ({ nftData = { contract_address: '', token_id: '' } }) => {
 const NftsDisplayer = ({ nfts = [] }) => {
   return (
     <ul>
-      {nfts.map((nft, index) =>
+      {nfts.filter((nft, index) => index < 5).map((nft, index) =>
         <li key={index}>
           <NftDisplayer nftData={nft} />
         </li>)}
