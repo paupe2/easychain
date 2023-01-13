@@ -1,27 +1,15 @@
 import { useNFTPort } from '../ApiCaller'
-import { useNft } from 'use-nft'
 
 const NftDisplayer = ({ nftData = { contract_address: '', token_id: '' } }) => {
-  const { loading, nft } = useNft(
-    nftData.contract_address,
-    nftData.token_id
-  )
   return (
     <>
-      {loading
-        ? <p>
-          <b>Chain:</b> {nft.chain}
-          <b>Contract Address:</b> {nft.contract_address}
-          <b>Creator Address:</b> {nft.creator_address}
-          <b>Token Id:</b> {nft.token_id}
-        </p>
-        : <>
-          <h1>{nft.name}</h1>
-          <img src={nft.image} alt='' />
-          <p>{nft.description}</p>
-          <p>Owner: {nft.owner}</p>
-          <p>Metadata URL: {nft.metadataUrl}</p>
-        </>}
+      <p>
+        <b>Chain:</b> {nftData.chain}
+        <b>Contract Address:</b> {nftData.contract_address}
+        <b>Creator Address:</b> {nftData.creator_address}
+        <b>Token Id:</b> {nftData.token_id}
+      </p>
+      <img src={nftData.file_url} alt={nftData.file_url} />
     </>
   )
 }

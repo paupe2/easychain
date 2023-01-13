@@ -5,7 +5,7 @@ export const useNFTPort = (filter) => {
   const [responseState, setResponseState] = useState({ response: {}, isResolved: false })
 
   const fetchData = async (config) => {
-    const response = await axios.get('https://api.nftport.xyz/v0/nfts?chain=polygon&include=default', config)
+    const response = await axios.get('https://api.nftport.xyz/v0/nfts?chain=ethereum&include=all', config)
     setResponseState({ response, isResolved: true })
   }
 
