@@ -1,4 +1,4 @@
-import { RawSingleCoinPrice } from '../ApiExamples/CoinGeckoExamples'
+import { RawMarketDisplayer } from '../ApiExamples/NFTPortExamples'
 import { HighlightTitle } from './styles'
 
 function App () {
@@ -7,7 +7,7 @@ function App () {
       <HighlightTitle>
         Hello
       </HighlightTitle>
-      <RawSingleCoinPrice />
+      <RawMarketDisplayer />
     </div>
   )
 }
