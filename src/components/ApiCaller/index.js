@@ -43,3 +43,24 @@ export const useCoinsList = () => {
 
   return responseState
 }
+
+export const useSupportedCurrencies = () => {
+  const [responseState, setResponseState] = useState({ response: {}, isResolved: false })
+
+  useEffect(() => {
+    const config = {
+      headers: {
+        accept: 'application/json'
+      }
+    }
+
+    const fecthData = async () => {
+      const response = await axios.get('https://api.coingecko.com/api/v3/simple/supported_vs_currencies', config)
+      setResponseState({ response, isResolved: true })
+    }
+
+    fecthData()
+  }, [])
+
+  return responseState
+}
