@@ -1,7 +1,7 @@
 import { useNFTPort } from '../ApiCaller'
 import { Img } from 'react-image'
 
-const NftDisplayer = ({ nftData = { contract_address: '', token_id: '' } }) => {
+const NftDisplayer = ({ nftData = { chain: '', contract_address: '', creator_address: '', token_id: '' } }) => {
   return (
     <>
       <p>
