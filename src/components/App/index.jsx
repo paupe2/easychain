@@ -8,7 +8,7 @@ function App () {
       <HighlightTitle>
         Hello
       </HighlightTitle>
-      <div style={{width:'300px', height:'300px'}}>
+      <div style={{ width: '300px', height: '300px' }}>
         <LoadingComponent />
       </div>
       <RawMarketDisplayer />

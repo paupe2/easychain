@@ -5,7 +5,7 @@ export const Container = styled.div`
     height: inherit;
 `
 
-export const Roller= styled.div`
+export const Roller = styled.div`
     display: inline-block;
     position: relative;
     left: 50%;
