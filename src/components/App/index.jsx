@@ -1,4 +1,4 @@
-import FilterInput from '../FilterInput'
+import { RawMarketDisplayer } from '../ApiExamples/NFTPortExamples'
 import { HighlightTitle } from './styles'
 
 function App () {
@@ -7,10 +7,7 @@ function App () {
       <HighlightTitle>
         Hello
       </HighlightTitle>
-      <FilterInput
-        options={['Hi', 'Bye']}
-        onChange={(prop) => { console.log(JSON.stringify(prop)) }}
-      />
+      <RawMarketDisplayer />
     </div>
   )
 }
