@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const Roller = styled.div`
     display: inline-block;
-    position: relative;
+    position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -30,74 +30,74 @@ export const Roller = styled.div`
         margin: -0.2rem 0 0 -0.2rem;
     }
 
-    *:nth-of-type(1) {
+    *:nth-child(1) {
         animation-delay: -0.036s;
     }
 
-    *:nth-of-type(1):after {
+    *:nth-child(1):after {
         top: 6.3rem;
         left: 6.3rem;
     }
 
-    *:nth-of-type(2) {
+    *:nth-child(2) {
         animation-delay: -0.072s;
     }
 
-    *:nth-of-type(2):after {
+    *:nth-child(2):after {
         top: 6.8rem;
         left: 5.6rem;
     }
 
-    *:nth-of-type(3) {
+    *:nth-child(3) {
         animation-delay: -0.108s;
     }
 
-    *:nth-of-type(3):after {
+    *:nth-child(3):after {
         top: 7.1rem;
         left: 4.8rem;
     }
 
-    *:nth-of-type(4) {
+    *:nth-child(4) {
         animation-delay: -0.144s;
     }
 
-    *:nth-of-type(4):after {
+    *:nth-child(4):after {
         top: 7.2rem;
         left: 4rem;
     }
 
-    *:nth-of-type(5) {
+    *:nth-child(5) {
         animation-delay: -0.18s;
     }
 
-    *:nth-of-type(5):after {
+    *:nth-child(5):after {
         top: 7.1rem;
         left: 3.2rem;
     }
 
-    *:nth-of-type(6) {
+    *:nth-child(6) {
         animation-delay: -0.216s;
     }
 
-    *:nth-of-type(6):after {
+    *:nth-child(6):after {
         top: 6.8rem;
         left: 2.4rem;
     }
 
-    *:nth-of-type(7) {
+    *:nth-child(7) {
         animation-delay: -0.252s;
     }
 
-    *:nth-of-type(7):after {
+    *:nth-child(7):after {
         top: 6.3rem;
         left: 1.7rem;
     }
 
-    *:nth-of-type(8) {
+    *:nth-child(8) {
         animation-delay: -0.288s;
     }
   
-    *:nth-of-type(8):after {
+    *:nth-child(8):after {
         top: 5.6rem;
         left: 1.2rem;
     }
