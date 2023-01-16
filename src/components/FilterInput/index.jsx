@@ -7,8 +7,7 @@ const FilterInput = ({ options = [], onChange = null }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    const prop = {}
-    prop[propKey.current] = propValue.current
+    const prop = { key: propKey.current, value: propValue.current }
     if (onChange) { onChange({ prop }) }
   }
 

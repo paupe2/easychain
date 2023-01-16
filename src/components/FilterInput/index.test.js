@@ -33,9 +33,10 @@ test('when submit button is clicked an object is returned', () => {
   
     const submitButton = screen.getByTestId('submit-button')
     fireEvent.click(submitButton)
-    expect(Object.keys(result).length).toBe(1)
-    expect(Object.keys(result)[0]).toBe('uno')
-    expect(result[Object.keys(result)[0]]).toBe('')
+
+    expect(Object.keys(result).length).toBe(2)
+    expect(result.key).toBe('uno')
+    expect(result.value).toBe('')
   })
 
   test('when changing selected option and submitting a different prop key is received', () => {
@@ -55,9 +56,10 @@ test('when submit button is clicked an object is returned', () => {
 
     const submitButton = screen.getByTestId('submit-button')
     fireEvent.click(submitButton)
-    expect(Object.keys(result).length).toBe(1)
-    expect(Object.keys(result)[0]).toBe('dos')
-    expect(result[Object.keys(result)[0]]).toBe('')
+
+    expect(Object.keys(result).length).toBe(2)
+    expect(result.key).toBe('dos')
+    expect(result.value).toBe('')
   })
 
   test('when writing text and submitting a different prop value is received', () => {
@@ -77,7 +79,8 @@ test('when submit button is clicked an object is returned', () => {
 
     const submitButton = screen.getByTestId('submit-button')
     fireEvent.click(submitButton)
-    expect(Object.keys(result).length).toBe(1)
-    expect(Object.keys(result)[0]).toBe('uno')
-    expect(result[Object.keys(result)[0]]).toBe('some-text')
+    
+    expect(Object.keys(result).length).toBe(2)
+    expect(result.key).toBe('uno')
+    expect(result.value).toBe('some-text')
   })
