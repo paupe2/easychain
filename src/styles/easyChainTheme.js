@@ -9,5 +9,8 @@ export const easyChainTheme = {
     disabled: 'var(--clr-disabled)',
     black: 'var(--clr-black)'
   },
-  sizes: {} // rem
+  sizes: {
+    normal: '1.5rem',
+    big: '2rem'
+  } // rem
 }
