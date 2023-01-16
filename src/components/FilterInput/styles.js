@@ -21,6 +21,7 @@ export const StyledForm = styled.form`
         @media (max-width: 800px) {
             flex-direction: column;
             align-items: stretch;
+            font-size: ${props => props.theme.sizes.phoneNormal};
       }
     }
 `

@@ -11,6 +11,7 @@ export const easyChainTheme = {
     black: 'var(--clr-black)'
   },
   sizes: {
+    phoneNormal: '1.2rem',
     normal: '1.5rem',
     big: '2rem'
   } // rem
