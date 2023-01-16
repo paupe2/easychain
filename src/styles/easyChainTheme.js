@@ -6,6 +6,7 @@ export const easyChainTheme = {
     primary: 'var(--clr-primary)',
     secondary: 'var(--clr-secondary)',
     highlight: 'var(--clr-highlight)',
+    strongHighlight: 'var(--clr-strong-hightlight)',
     disabled: 'var(--clr-disabled)',
     black: 'var(--clr-black)'
   },

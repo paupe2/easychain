@@ -63,7 +63,7 @@ export const StyledSubmit = styled.input`
     cursor: pointer;
 
     :hover {
-        background-color: ${props => props.theme.colors.black};
+        background-color: ${props => props.theme.colors.strongHighlight};
     }
     @media (max-width: 800px) {
         margin: 10px 0;
