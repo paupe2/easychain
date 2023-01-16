@@ -32,7 +32,7 @@ export const StyledInput = styled.input`
     padding: 10px;
     border: 1px solid ${props => props.theme.colors.disabled};
     @media (max-width: 800px) {
-        margin: 10px 0;
+        margin-bottom: 5px;
     }
 `
 
@@ -42,7 +42,7 @@ export const StyledSelect = styled.select`
     padding: 10px;
     border: 1px solid ${props => props.theme.colors.disabled};
     @media (max-width: 800px) {
-        margin: 10px 0;
+        margin-bottom: 5px;
     }
 `
 
@@ -52,7 +52,7 @@ export const StyledOption = styled.option`
     padding: 10px;
     border: 1px solid ${props => props.theme.colors.disabled};
     @media (max-width: 800px) {
-        margin: 10px 0;
+        margin-bottom: 5px;
     }
 `
 
@@ -68,6 +68,6 @@ export const StyledSubmit = styled.input`
         background-color: ${props => props.theme.colors.strongHighlight};
     }
     @media (max-width: 800px) {
-        margin: 10px 0;
+        margin-bottom: 5px;
     }
 `
