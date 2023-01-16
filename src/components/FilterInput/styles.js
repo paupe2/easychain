@@ -1,15 +1,14 @@
 import styled from '@emotion/styled'
 
 export const StyledForm = styled.form`
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 
-display: flex;
-flex-flow: row wrap;
-align-items: center;
-
-@media (max-width: 800px) {
-    flex-direction: column;
-    align-items: stretch;
-}
+    @media (max-width: 800px) {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
     * {
         display: flex;
