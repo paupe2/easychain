@@ -1,13 +1,15 @@
 import { HighlightTitle } from './styles'
-import FilterInput from '../FilterInput'
 
 function App () {
   return (
     <div className='App'>
       <HighlightTitle>
         Hello
-      </HighlightTitle>
+      </HighlightTitle>  
       <FilterInput options={['One', 'Two', 'Three', 'Caramba']} onChange={({ prop = {} }) => { console.log(prop) }} />
+      <div style={{ width: '300px', height: '300px' }}>
+        <LoadingComponent />
+      </div>
     </div>
   )
 }

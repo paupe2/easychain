@@ -1,4 +1,5 @@
 import { useCoinPrice, useCoinsList, useCoinsMarket, useSupportedCurrencies } from '../ApiCaller'
+import LoadingComponent from '../LoadingComponent'
 
 const CoinDisplayer = ({ coin = { id: '', symbol: '', name: '' } }) => {
   return (
@@ -17,7 +18,7 @@ export const RawCoinsList = () => {
     <>
       {coins.isResolved
         ? coins.response.data.map((coin, index) => <CoinDisplayer key={index} coin={coin} />)
-        : <p>LOADING LOADING LOADING</p>}
+        : <LoadingComponent />}
     </>
   )
 }
@@ -37,7 +38,7 @@ export const RawSupportedCurrencyList = () => {
     <>
       {currencies.isResolved
         ? currencies.response.data.map((currency, index) => <CurrencyDisplayer key={index} currency={currency} />)
-        : <p>LOADING LOADING LOADING</p>}
+        : <LoadingComponent />}
     </>
   )
 }
@@ -63,7 +64,7 @@ export const RawCoinMarketList = () => {
     <>
       {coins.isResolved
         ? coins.response.data.map((coin, index) => <MarketCoinDisplayer key={index} coin={coin} />)
-        : <p>LOADING LOADING LOADING</p>}
+        : <LoadingComponent />}
     </>
   )
 }
@@ -77,7 +78,7 @@ export const RawSingleCoinPrice = () => {
     <>
       {coin.isResolved
         ? <p><b>{id} in {currency}: </b> {coin.response.data[id][currency]}</p>
-        : <p>LOADING LOADING LOADING</p>}
+        : <LoadingComponent />}
     </>
   )
 }

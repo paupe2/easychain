@@ -1,5 +1,6 @@
 import { useNFTPort } from '../ApiCaller'
 import { Img } from 'react-image'
+import LoadingComponent from '../LoadingComponent'
 
 const NftDisplayer = ({ nftData = { chain: '', contract_address: '', creator_address: '', token_id: '' } }) => {
   return (
@@ -36,7 +37,7 @@ export const RawMarketDisplayer = ({ filter = '' }) => {
     <>
       {nfts.isResolved
         ? <NftsDisplayer nfts={nfts.response.data.nfts} />
-        : <p>LOADING LOADING LOADING</p>}
+        : <LoadingComponent />}
     </>
   )
 }
