@@ -1,5 +1,5 @@
 import React from 'react';
-import Exchange from './exchange';
+import Exchange from './Exchange';
 
 
 const Exchanges = () => {
