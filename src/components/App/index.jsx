@@ -1,5 +1,5 @@
-import { RawMarketDisplayer } from '../ApiExamples/NFTPortExamples'
 import { HighlightTitle } from './styles'
+import FilterInput from '../FilterInput'
 import LoadingComponent from '../LoadingComponent'
 
 function App () {
@@ -8,10 +8,10 @@ function App () {
       <HighlightTitle>
         Hello
       </HighlightTitle>
+      <FilterInput options={['One', 'Two', 'Three', 'Caramba']} onChange={({ prop = {} }) => { console.log(prop) }} />
       <div style={{ width: '300px', height: '300px' }}>
         <LoadingComponent />
       </div>
-      <RawMarketDisplayer />
     </div>
   )
 }
