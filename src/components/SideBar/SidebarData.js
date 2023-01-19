@@ -11,27 +11,21 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Reports',
-    path: '/reports',
-    icon: <IoIcons.IoIosPaper />,
-    cName: 'nav-text'
-  },
-  {
-    title: 'Products',
-    path: '/products',
+    title: 'NFTS',
+    path: '/nfts',
     icon: <FaIcons.FaCartPlus />,
     cName: 'nav-text'
   },
   {
-    title: 'Team',
-    path: '/team',
-    icon: <IoIcons.IoMdPeople />,
+    title: 'Cryptos',
+    path: '/cryptos',
+    icon: <FaIcons.FaBitcoin />,
     cName: 'nav-text'
   },
   {
-    title: 'Messages',
-    path: '/messages',
-    icon: <FaIcons.FaEnvelopeOpenText />,
+    title: 'Exchanges',
+    path: '/exchanges',
+    icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },
   {
