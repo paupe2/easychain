@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { ThemeProvider } from '@emotion/react'
 import { easyChainTheme } from './styles/easyChainTheme'
-import App from './components/App/App'
+import App from './components/App/index'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
