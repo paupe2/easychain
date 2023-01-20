@@ -1,8 +1,11 @@
 import React from 'react'
+import FilterInput from '../../FilterInput'
 
 const Crypto = () => {
   return (
-    <div>Crypto</div>
+    <div>
+      <FilterInput options={['One', 'Two', 'Three', 'Caramba']} onChange={({ prop = {} }) => { console.log(prop) }} />
+    </div>
   )
 }
 

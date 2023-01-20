@@ -1,8 +1,11 @@
 import React from 'react'
+import Exchanges from '../../Exchange/'
 
 const Exchange = () => {
   return (
-    <div>Exchange</div>
+    <div>
+      <Exchanges />
+    </div>
   )
 }
 
