@@ -1,11 +1,9 @@
-import { HighlightTitle } from './styles'
+import Exchanges from '../Exchange/index'
 
 function App () {
   return (
     <div className='App'>
-        <HighlightTitle>
-          Hello
-        </HighlightTitle>
+        <Exchanges />
     </div>
   )
 }

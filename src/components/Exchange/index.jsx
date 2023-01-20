@@ -1,63 +1,19 @@
-import React from 'react';
-import Exchange from './Exchange';
+import React from 'react'
+import Exchange from './exchange'
+import data from './exchangesData'
+import './styles.css'
 
 
 const Exchanges = () => {
-  const exchanges = [
-    {
-      id: 1,
-      name: "Binace",
-      picture : "images/Binance.png"
-    },
-    {
-      id: 2,
-      name: "Coinbase Exchange",
-      picture : "images/Bitfinex.png"
-    },
-    {
-      id: 3,
-      name: "Kraken",
-      picture : "images/Kraken.png"
-    },
-    {
-      id: 4,
-      name: "KuCoin",
-      picture : "images/KuCoin.png"
-    },
-    {
-      id: 5,
-      name: "Bitfinex",
-      picture : "images/Bitfinex.png"
-    },
-    {
-      id: 6,
-      name: "Gemini",
-      picture : "images/Gemini.png"
-    },
-    {
-      id: 7,
-      name: "Coincheck",
-      picture : "images/Coincheck.png"
-    },
-    {
-      id: 8,
-      name: "Bitstamp",
-      picture : "images/Bitstamp.png"
-    },
-    {
-      id: 9,
-      name: "Bybit",
-      picture : "images/Bybit.png"
-    },
-  ]
-
   return (
-    <div>
-      {exchanges.map((exchange) => {
+    <div className='row'>
+      <h1>TOP 10 EXCHANGES:</h1><br></br>
+      {data.map((exchange) => {
         return (
-          <Exchange 
+          <Exchange
             name = {exchange.name}
             picture = {exchange.picture}
+            url = {exchange.url}
             key = {exchange.id}
             />
         )
