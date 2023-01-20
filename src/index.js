@@ -10,6 +10,6 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={easyChainTheme}>
       <App />
-    </ThemeProvider>
+   </ThemeProvider>
   </React.StrictMode>
 )
