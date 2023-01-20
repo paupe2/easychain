@@ -5,13 +5,15 @@ import Crypto from '../SideBar/pages/Crypto'
 import Nfts from '../SideBar/pages/Nfts';
 import Exchanges from '../SideBar/pages/Exchanges'
 import Support from '../SideBar/pages/Support';
+import FilterInput from '../FilterInput'
+import LoadingComponent from '../LoadingComponent'
 
 
 
 function App () {
   return (
     <div className='App'>
-      
+    
         <Router>
         <Navbar />
         <Routes>
@@ -22,6 +24,12 @@ function App () {
           <Route path='/support' element={<Support />} />
         </Routes>
       </Router>
+
+      <Exchanges />
+      <FilterInput options={['One', 'Two', 'Three', 'Caramba']} onChange={({ prop = {} }) => { console.log(prop) }} />
+      <div style={{ width: '300px', height: '300px' }}>
+        <LoadingComponent />
+      </div>
     </div>
   )
 }

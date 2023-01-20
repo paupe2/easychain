@@ -1,0 +1,36 @@
+.card-box {
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  
+}
+
+.row{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.text{
+    text-align: center;
+}
+
+.size {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.img {
+  padding: 0.25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+
+}
+
+h4 {
+  line-height: 50px;
+  font-size: 20px;
+}
