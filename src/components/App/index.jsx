@@ -1,6 +1,6 @@
 import Exchanges from '../Exchange/index'
-import { HighlightTitle } from './styles'
 import FilterInput from '../FilterInput'
+import LoadingComponent from '../LoadingComponent'
 
 
 function App () {
