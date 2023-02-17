@@ -10,7 +10,7 @@ export const useNFTPort = ({ chain = 'ethereum' }) => {
     const config = {
       headers: {
         'Content-Type': 'application/json',
-        Authorization: '0db4cdf1-c94e-409c-8cfd-a3d270b86ca2'
+        Authorization: '74da3d77-c633-42f4-8c61-982f9be3c377'
       }
     }
 

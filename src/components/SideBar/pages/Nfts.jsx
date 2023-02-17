@@ -1,8 +1,10 @@
 import React from 'react'
+import NFTMarket from '../../NFTMarket/NFTMarket'
 
 const Nfts = () => {
   return (
-    <div>Nfts</div>
+    <div><NFTMarket />
+    </div>
   )
 }
 
