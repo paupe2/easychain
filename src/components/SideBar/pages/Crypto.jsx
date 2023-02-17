@@ -1,10 +1,12 @@
 import React from 'react'
-import FilterInput from '../../FilterInput'
+import CryptoMarket from '../../CryptoMarket/CryptoMarket'
+// import FilterInput from '../../FilterInput'
 
 const Crypto = () => {
+  // <FilterInput options={['One', 'Two', 'Three', 'Caramba']} onChange={({ prop = {} }) => { console.log(prop) }} />
   return (
     <div>
-      <FilterInput options={['One', 'Two', 'Three', 'Caramba']} onChange={({ prop = {} }) => { console.log(prop) }} />
+      <CryptoMarket />
     </div>
   )
 }
